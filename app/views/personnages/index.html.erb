@@ -1,0 +1,29 @@
+<h1>Listing personnages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Sphere</th>
+    <th>Histoires personnages</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @personnages.each do |personnage| %>
+  <tr>
+    <td><%= personnage.name %></td>
+    <td><%= personnage.description %></td>
+    <td><%= personnage.sphere_id %></td>
+    <td><%= personnage.histoires_personnages_id %></td>
+    <td><%= link_to 'Show', personnage %></td>
+    <td><%= link_to 'Edit', edit_personnage_path(personnage) %></td>
+    <td><%= link_to 'Destroy', personnage, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Personnage', new_personnage_path %>

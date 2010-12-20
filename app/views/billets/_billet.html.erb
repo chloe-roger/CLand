@@ -1,0 +1,14 @@
+<div id="billet">
+    <div id="title">
+        <%= billet.title %><span id="author">, par <%= billet.author %></span>
+    </div>
+    <% if "" != billet.image_url %>
+      <div id="image">
+        <img src = <%= "/images/#{billet.image_url}" %> />
+      </div>
+    <% end %>
+    <div id="body">
+        <%= billet.body %>
+    </div>
+
+  </div>

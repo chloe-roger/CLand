@@ -1,0 +1,85 @@
+/* cland.scss */
+#navbar {
+  width: 80%;
+  height: 40px; }
+
+/* Menu */
+#menu {
+  padding: 1em 2em 1em 0em;
+  background: #f1dfc9 url("../images/a2.gif") top left repeat-x;
+  font-size: 0.9em; }
+  #menu ul {
+    display: block;
+    width: 778px;
+    margin: 0em auto;
+    list-style: none;
+    padding-left: 2.5em; }
+  #menu li {
+    display: inline; }
+    #menu li a {
+      color: #38271c;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.25em 0.75em 0.25em 0.75em; }
+      #menu li a:hover {
+        background: #38271c url("../images/a4.gif") top left repeat-x;
+        color: white; }
+
+/* Accueil */
+#accueil {
+  float: left;
+  width: 50em;
+  margin: 4em 5em;
+  font-size: 0.9em; }
+  #accueil h3 {
+    text-align: center; }
+
+/* Blog */
+#blog {
+  float: left;
+  width: 60em;
+  margin: 4em 5em;
+  font-size: 0.9em; }
+  #blog h1 {
+    text-align: center;
+    font-size: 1.5em; }
+  #blog #billet {
+    float: left;
+    width: 80%;
+    margin: 1em 1em;
+    padding: 1em 2em;
+    font-size: 0.9em; }
+    #blog #billet #title {
+      text-align: center;
+      margin: 1em;
+      font-size: 2em; }
+    #blog #billet #author {
+      text-align: center;
+      margin: 1em;
+      font-size: 0.5em; }
+    #blog #billet #image {
+      text-align: center; }
+    #blog #billet #body {
+      font-size: 1.2em; }
+
+/* Styles for order form */
+.cland_form fieldset {
+  background: #efe; }
+.cland_form legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em; }
+.cland_form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block; }
+.cland_form select, .cland_form textarea, .cland_form input {
+  margin-left: 0.5em; }
+.cland_form .submit {
+  margin-left: 4em; }
+.cland_form div {
+  margin: 0.5em 0; }

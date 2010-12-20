@@ -1,0 +1,31 @@
+<h1>Listing histoires</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Author</th>
+    <th>Sphere</th>
+    <th>Histoires personnages</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @histoires.each do |histoire| %>
+  <tr>
+    <td><%= histoire.title %></td>
+    <td><%= histoire.description %></td>
+    <td><%= histoire.author %></td>
+    <td><%= histoire.sphere_id %></td>
+    <td><%= histoire.histoires_personnages_id %></td>
+    <td><%= link_to 'Show', histoire %></td>
+    <td><%= link_to 'Edit', edit_histoire_path(histoire) %></td>
+    <td><%= link_to 'Destroy', histoire, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Histoire', new_histoire_path %>

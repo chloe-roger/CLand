@@ -1,0 +1,2 @@
+module HistoiresHelper
+end

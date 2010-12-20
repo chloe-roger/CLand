@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @histoire.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @histoire.description %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @histoire.author %>
+</p>
+
+<p>
+  <b>Sphere:</b>
+  <%= @histoire.sphere_id %>
+</p>
+
+<p>
+  <b>Histoires personnages:</b>
+  <%= @histoire.histoires_personnages_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_histoire_path(@histoire) %> |
+<%= link_to 'Back', histoires_path %>

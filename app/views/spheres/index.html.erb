@@ -1,0 +1,27 @@
+<h1>Listing spheres</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Image url</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spheres.each do |sphere| %>
+  <tr>
+    <td><%= sphere.title %></td>
+    <td><%= sphere.image_url %></td>
+    <td><%= sphere.description_id %></td>
+    <td><%= link_to 'Show', sphere %></td>
+    <td><%= link_to 'Edit', edit_sphere_path(sphere) %></td>
+    <td><%= link_to 'Destroy', sphere, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sphere', new_sphere_path %>

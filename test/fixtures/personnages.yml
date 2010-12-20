@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  sphere_id: 1
+  histoires_personnages_id: 
+
+two:
+  name: MyString
+  description: MyText
+  sphere_id: 1
+  histoires_personnages_id: 

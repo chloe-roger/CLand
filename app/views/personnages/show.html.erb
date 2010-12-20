@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @personnage.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @personnage.description %>
+</p>
+
+<p>
+  <b>Sphere:</b>
+  <%= @personnage.sphere_id %>
+</p>
+
+<p>
+  <b>Histoires personnages:</b>
+  <%= @personnage.histoires_personnages_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_personnage_path(@personnage) %> |
+<%= link_to 'Back', personnages_path %>

@@ -1,0 +1,138 @@
+/* cland.scss */
+
+$color_brown: #995500;
+$color_grey: #665555;
+$color_very_dark_brown: #2E2017;
+$color_white_brown: #bbaa77;
+$color_very_white_brown: #F1DFC9;
+$color_dark_brown: #38271C;
+$color_prune: #443333;
+$color_veryvery_white_brown: #FFFEEF;
+$color_white: #fff;
+
+#navbar{
+  width: 80%;
+  height: 40px;
+}
+
+
+/* Menu */
+
+
+#menu
+{
+	padding: 1em 2em 1em 0em;
+	background: $color_very_white_brown url('../images/a2.gif') top left repeat-x;
+	font-size: 0.9em;
+
+    ul {
+      display: block;
+	  width: 778px;
+	  margin: 0em auto;
+	  list-style: none;
+	  padding-left: 2.5em;
+    }
+
+    li {
+	  display: inline;
+      a {
+	    color: $color_dark_brown;
+	    font-weight: bold;
+	    text-decoration: none;
+	    padding: 0.25em 0.75em 0.25em 0.75em;
+	    &:hover {
+	      background: $color_dark_brown url('../images/a4.gif') top left repeat-x;
+	      color: $color_white;
+	    }
+      }
+    }
+}
+
+
+
+/* Accueil */
+
+#accueil {
+    float: left;
+	width: 50em;
+    margin: 4em 5em;
+	font-size: 0.9em;
+    h3 {
+        text-align: center;
+    }
+}
+
+
+/* Blog */
+
+#blog {
+    float: left;
+    width: 60em;
+    margin: 4em 5em;
+    font-size: 0.9em;
+    h1 {
+      text-align: center;
+      font-size: 1.5em;
+    }
+    #billet {
+      float: left;
+      width: 80%;
+      margin: 1em 1em;
+      padding: 1em 2em;
+      font-size: 0.9em;
+      #title {
+        text-align: center;
+        margin: 1em;
+        font-size: 2em;
+      }
+      #author {
+        text-align: center;
+        margin: 1em;
+        font-size: 0.5em;
+      }
+      #image {
+        text-align: center;
+        
+      }
+      #body{
+        font-size: 1.2em;
+      }
+    }
+}
+
+
+/* Styles for order form */
+
+
+
+.cland_form {
+    fieldset {
+      background: #efe;
+    }
+
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+    .submit {
+      margin-left: 4em;
+    }
+    div {
+      margin: 0.5em 0;
+    }
+}
