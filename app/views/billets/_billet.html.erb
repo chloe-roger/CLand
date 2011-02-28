@@ -1,13 +1,13 @@
-<div id="billet">
-    <div id="title">
-        <%= billet.title %><span id="author">, par <%= billet.author %></span>
+<div class="billet">
+    <div class="title">
+        <%= billet.title %><span class="author">, par <%= billet.author %></span>
     </div>
-    <% if "" != billet.image_url %>
-      <div id="image">
+    <% unless billet.image_url.blank? %>
+      <div class="image">
         <img src = <%= "/images/#{billet.image_url}" %> />
       </div>
     <% end %>
-    <div id="body">
+    <div class="body">
         <%= billet.body %>
     </div>
 

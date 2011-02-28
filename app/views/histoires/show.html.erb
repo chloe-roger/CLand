@@ -21,8 +21,14 @@
 </p>
 
 <p>
-  <b>Histoires personnages:</b>
-  <%= @histoire.histoires_personnages_id %>
+  <b>Personnages:</b>
+  <% if @histoire.personnages.count > 0 %>
+      <ul>
+        <% @histoire.personnages.each do |personnage| %>
+            <li><%= personnage.name %></li>
+        <% end %>
+      </ul>
+  <% end %>
 </p>
 
 

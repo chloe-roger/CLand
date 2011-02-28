@@ -1,0 +1,13 @@
+<div id="boite_a_sphere">
+  <div id="header_boite_a_sphere">
+    <div class="title">Boite à spheres</div>
+    <div class="image_sphere">
+      <img  src = "/images/sphere1.png"/>
+    </div>
+  </div>
+  <div id="liste_spheres">
+    <% @spheres.each do |sphere| %>
+      <%= link_to sphere.title, sphere_path(params[:sphere_id] = sphere.id) %>
+    <% end %>
+  </div>
+</div>

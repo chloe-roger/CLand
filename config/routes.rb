@@ -1,4 +1,13 @@
 Cland::Application.routes.draw do
+
+  get "histoires_de_sphere/index"
+
+  get "boite_a_bonshommes/bonjour_madame"
+
+  get "boite_a_bonshommes/bonjour_monsieur"
+
+  get "boite_a_gars/bonjour_monsieur"
+
   get 'admin' => 'admin#index'
 
   controller :sessions do
@@ -23,7 +32,9 @@ Cland::Application.routes.draw do
   root :to => "accueil#index"
   match 'boite_a_news' => 'blog#index', :as => "blog"
   match 'accueil' => 'accueil#index', :as => "accueil"
-  
+  match 'boite_a_sphere' => 'boite_a_spheres#spheres', :as => "boite_a_spheres"
+  match 'boite_a_spheres/:sphere_id' => 'histoires_de_sphere#index', :as => 'sphere'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

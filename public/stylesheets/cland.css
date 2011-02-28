@@ -1,16 +1,17 @@
 /* cland.scss */
-#navbar {
-  width: 80%;
-  height: 40px; }
+body {
+  background-color: #f9efc3;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
 /* Menu */
 #menu {
   padding: 1em 2em 1em 0em;
   background: #f1dfc9 url("../images/a2.gif") top left repeat-x;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
   #menu ul {
     display: block;
-    width: 778px;
+    width: 80%;
     margin: 0em auto;
     list-style: none;
     padding-left: 2.5em; }
@@ -43,23 +44,23 @@
   #blog h1 {
     text-align: center;
     font-size: 1.5em; }
-  #blog #billet {
+  #blog .billet {
     float: left;
     width: 80%;
     margin: 1em 1em;
     padding: 1em 2em;
     font-size: 0.9em; }
-    #blog #billet #title {
+    #blog .billet .title {
       text-align: center;
       margin: 1em;
       font-size: 2em; }
-    #blog #billet #author {
+    #blog .billet .author {
       text-align: center;
       margin: 1em;
       font-size: 0.5em; }
-    #blog #billet #image {
+    #blog .billet .image {
       text-align: center; }
-    #blog #billet #body {
+    #blog .billet .body {
       font-size: 1.2em; }
 
 /* Styles for order form */
@@ -83,3 +84,58 @@
   margin-left: 4em; }
 .cland_form div {
   margin: 0.5em 0; }
+
+/* Pour la boite à sphères */
+#boite_a_sphere #header_boite_a_sphere {
+  width: 900px;
+  box-sizing: content-box;
+  text-align: center; }
+  #boite_a_sphere #header_boite_a_sphere .image_sphere {
+    padding: 2em; }
+    #boite_a_sphere #header_boite_a_sphere .image_sphere img {
+      alt: "Sphere monde";
+      width: 200px;
+      float: right;
+      border-color: #4c1b1b; }
+  #boite_a_sphere #header_boite_a_sphere .title {
+    text-align: center;
+    padding: 2em;
+    font-size: 2em;
+    float: left; }
+#boite_a_sphere #liste_spheres {
+  width: 80%;
+  padding: 5em;
+  margin: 1em; }
+
+.sphere .sphere_title {
+  padding: 2em;
+  font-size: 2em; }
+
+.histoire .histoire_header {
+  text-align: center; }
+  .histoire .histoire_header .histoire_title {
+    font-size: 2em; }
+  .histoire .histoire_header .histoire_author {
+    font-size: 1.1em; }
+.histoire .histoire_text {
+  padding: 3em; }
+
+/* Boite à dames */
+.boite_a_dames h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder; }
+.boite_a_dames #madame_du_jour {
+  text-align: center; }
+
+#main_content {
+  min-height: 500px;
+  font-size: 13pt; }
+
+#footer {
+  clear: both;
+  padding: 1.5em 2em 1.5em 2em;
+  text-align: center;
+  margin: 0em auto;
+  border-top: solid 1px #efeecc;
+  font-size: 0.9em; }

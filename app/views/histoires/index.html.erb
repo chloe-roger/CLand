@@ -18,7 +18,13 @@
     <td><%= histoire.description %></td>
     <td><%= histoire.author %></td>
     <td><%= histoire.sphere_id %></td>
-    <td><%= histoire.histoires_personnages_id %></td>
+    <% if histoire.personnages.count > 0 %>
+      <td><ul>
+        <% histoire.personnages.each do |personnage| %>
+            <li><%= personnage.name %></li>
+        <% end %>
+      </ul></td>
+  <% end %>
     <td><%= link_to 'Show', histoire %></td>
     <td><%= link_to 'Edit', edit_histoire_path(histoire) %></td>
     <td><%= link_to 'Destroy', histoire, :confirm => 'Are you sure?', :method => :delete %></td>

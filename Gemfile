@@ -19,7 +19,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Bundle the extra gems:
 # gem 'bj'
-# gem 'nokogiri'
+gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
@@ -29,3 +29,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'compass', '>= 0.10.6'
+gem 'will_paginate', '>= 3.0.pre'
+gem 'devise', '~> 1.1.5'

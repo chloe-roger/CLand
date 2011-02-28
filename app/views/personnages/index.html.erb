@@ -16,7 +16,15 @@
     <td><%= personnage.name %></td>
     <td><%= personnage.description %></td>
     <td><%= personnage.sphere_id %></td>
-    <td><%= personnage.histoires_personnages_id %></td>
+    <% if personnage.histoires.count > 0 %>
+        Histoires :
+        <ul>
+        <% personnage.histoires.each do |histoire| %>
+            <li><%= histoire.title %></li>
+        <% end %>
+        </ul>
+    <% end %>
+
     <td><%= link_to 'Show', personnage %></td>
     <td><%= link_to 'Edit', edit_personnage_path(personnage) %></td>
     <td><%= link_to 'Destroy', personnage, :confirm => 'Are you sure?', :method => :delete %></td>

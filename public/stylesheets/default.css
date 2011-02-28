@@ -24,8 +24,7 @@ a
 
 body
 {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 11pt;
+	
 	background: #fff;
 	color: #665555;
 }
@@ -197,12 +196,7 @@ body
 
 #footer
 {
-	padding: 1.5em 2em 1.5em 2em;
-	text-align: center;
-	width: 778px;
-	margin: 0em auto;
-	border-top: solid 1px #efeecc;
-	font-size: 0.9em;
+
 }
 
 .clear

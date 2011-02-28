@@ -1,4 +1,6 @@
 class SpheresController < ApplicationController
+  skip_before_filter :authorize, :only => :boite_a_sphere
+
   # GET /spheres
   # GET /spheres.xml
   def index
@@ -78,6 +80,15 @@ class SpheresController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(spheres_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  def boite_a_sphere
+    @spheres = Sphere.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @spheres }
     end
   end
 end
