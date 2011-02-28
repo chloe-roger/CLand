@@ -6,7 +6,7 @@
       
       <%= javascript_include_tag :defaults %>
       <%= csrf_meta_tag %>
-      <title><%= I18n.t('global.site_title') %></title>
+      <title>C Land</title>
     </head>
     <body>
 
@@ -17,15 +17,15 @@
           </div>
           <div id="menu">
             <ul>
-              <li><%= link_to I18n.t('views.layout.home'), accueil_path %></li>
-              <li><%= link_to I18n.t('views.layout.news_box'), boite_a_news_blog_path %></li>
-              <li><%= link_to I18n.t('views.layout.spheres_box'), boite_a_spheres_path %></li>
+              <li><%= link_to "Accueil", accueil_path %></li>
+              <li><%= link_to "La Boite à news", blog_path %></li>
+              <li><%= link_to "La Boite à sphères", boite_a_spheres_path %></li>
               <% if session[:user_id] %>
-                  <li><%= link_to I18n.t('views.layout.news_management'), boite_a_news_billets_path %></li>
-                  <li><%= link_to I18n.t('views.layout.users_management'), users_path %></li>
-                  <li><%= link_to I18n.t('views.layout.log_out'), logout_path, :method => :delete	%></li>
+                  <li><%= link_to "Administration des news", billets_path %></li>
+                  <li><%= link_to "Administration des utilisateurs", users_path %></li>
+                  <li><%= link_to 'Logout', logout_path, :method => :delete	%></li>
               <% else %>
-                <li><%= link_to I18n.t('views.layout.log_in'), login_path, :method => :get %></li>
+                <li><%= link_to "Login", login_path, :method => :get %></li>
               <% end %>
             </ul>
           </div>
