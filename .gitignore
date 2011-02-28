@@ -1,4 +1,56 @@
-.bundle
-db/*.sqlite3
-log/*.log
-tmp/**/*
+#### OSX ####
+.DS_Store
+.DS_Store?
+Icon?
+
+# Thumbnails
+._*
+
+# ack & vim swap files
+.ackrc
+*.swp
+
+
+#### TextMate ####
+*.tmproj
+tmtags
+
+
+#### Rails #####
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+db/schema.rb
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+Gemfile.lock
+database.yml
+coverage.data
+
+
+### Rubymine ###
+.idea
+
+### MESH ####
+hudson
+rcov
+private/mesh_assets
+
+### Generated Stylesheets ###
+public/stylesheets/ie.css
+public/stylesheets/screen.css
+public/stylesheets/print.css
+public/stylesheets/mesh_main.css
+public/stylesheets/fullcalendar.css
+
+### Generated Javascript translation file ###
+public/javascripts/translations.js
