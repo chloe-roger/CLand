@@ -1,0 +1,29 @@
+<h1><%= I18n.t('views.boite_a_news.billets.index.header') %></h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Author</th>
+    <th>Image url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @billets.each do |billet| %>
+  <tr>
+    <td><%= billet.title %></td>
+    <td><%= billet.body %></td>
+    <td><%= billet.author %></td>
+    <td><%= billet.image_url %></td>
+    <td><%= link_to 'Show', billet %></td>
+    <td><%= link_to 'Edit', edit_boite_a_news_billet_path(billet) %></td>
+    <td><%= link_to 'Destroy', billet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Billet', new_boite_a_news_billet_path %>

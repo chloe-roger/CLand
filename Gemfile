@@ -1,27 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'bundler', '>= 1.0.10' # MIT
+gem 'rails',   '= 3.0.3'   # MIT
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'mysql2', '~> 0.2.6'  # MIT
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-# gem 'ruby-debug'
-# gem 'ruby-debug19'
-
-# Bundle the extra gems:
-# gem 'bj'
 gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
@@ -30,6 +15,35 @@ gem 'nokogiri'
 #   gem 'webrat'
 # end
 
-gem 'compass', '>= 0.10.6'
-gem 'will_paginate', '>= 3.0.pre'
-gem 'devise', '~> 1.1.5'
+# :mesh do
+gem 'mongrel',                 '~> 1.1.5'  # MIT
+gem 'devise',                  '>= 1.2.rc' # MIT
+gem 'cancan',                  '~> 1.5.0'  # MIT
+gem 'simple_form',             '~> 1.3.1'  # MIT
+gem 'paperclip',               '~> 2.3'    # MIT
+gem 'haml',                    '~> 3.0.24' # MIT
+gem 'compass',                 '~> 0.10.6' # MIT
+gem 'rails3_acts_as_paranoid', '~> 0.0.4'  # MIT
+gem 'uuid',                    '~> 2.3.1'  # MIT
+gem 'ri_cal',                  '~> 0.8.8'  # MIT
+gem 'best_in_place',           '~> 0.1.7'  # ???
+gem 'i18n-js',                 '~> 0.1.6'  # MIT
+
+group :console do
+  gem 'awesome_print'
+  gem 'wirble'
+  gem 'hirb'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'rspec', '>= 2.0.0'
+  gem 'rspec-rails', '>= 2.0.0'
+  gem 'spork'
+  gem 'launchy'
+  gem 'rcov'
+  gem 'ci_reporter'
+end

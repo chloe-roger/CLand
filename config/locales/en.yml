@@ -3,3 +3,31 @@
 
 en:
   hello: "Hello world"
+  global:
+    site_title: "C Land"
+
+  views:
+    layout:
+      home: "Home"
+      news_box: "News box"
+      spheres_box: "Spheres box"
+      news_management: "News management"
+      users_management: "Users management"
+      log_in: "log in"
+      log_out: "log out"
+    accueil:
+      welcome_message: "Welcome here!"
+      home_message: "Love you guys ^^"
+    boite_a_news:
+      billets:
+        new:
+          header: "New Billet"
+        edit:
+          header: "Edit the billet : %{title}"
+        index:
+          header: "Listing billets"
+        show:
+          header: "Billet : %{title}"
+
+  resources:
+    boite_a_news:

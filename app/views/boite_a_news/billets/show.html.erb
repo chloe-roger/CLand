@@ -1,0 +1,21 @@
+<h1><%= I18n.t('views.boite_a_news.billets.show.header', :title => @billet.title) %></h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Body:</b>
+  <%= @billet.body %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @billet.author %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @billet.image_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_boite_a_news_billet_path(@billet) %> |
+<%= link_to 'Back', boite_a_news_billets_path %>
